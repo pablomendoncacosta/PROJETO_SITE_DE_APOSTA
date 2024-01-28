@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Aposta</title>
+    <link rel="stylesheet" href="../eslitlos/jogocontagem.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <h1 class="cabecalho_text">Jogo de Aposta</h1>
+  <div class="caixa_aposta">
+      <div class="caixa_aposta-interna">
+           <p id="resultado"></p>
+          <div class="opcoes_aposta">
+              <label class="text_label" for="aposta">Faça sua aposta:</label>
+              <input class="Insira_aposta" type="text" id="aposta" placeholder="Insira sua aposta">
+          </div>
+          <button class="button_aposta" onclick="jogar()">Apostar</button>
+       
+          <p id="tempo-restante"></p>
+      </div>
+
+  </div>
+<div class="botoes">
+    <button id="meuBotao"><span class="material-symbols-outlined icons">
+        volume_off
+        </span></button>
+    <audio id="meuAudio" loop>
+      <source src="../AUDIO/cyberpunk-beat-64649.mp3" type="audio/mp3">
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+</div>
+  <script>
+
+const botao = document.getElementById('meuBotao');
+const audio = document.getElementById('meuAudio');
+var icons = document.querySelector('.icons');
+
+let audioAtivo = false;
+
+botao.addEventListener('click', function() {
+  if (audioAtivo) {
+    audio.pause();
+    audioAtivo = false;
+    icons.innerHTML =`volume_off`;
+  } else {
+    audio.play();
+    audioAtivo = true; 
+    icons.innerHTML =`volume_up`;
+  }
+
+
+});
+
+    let tempoRestante = 15; // Tempo inicial para fazer a aposta
+    let limiteInferior;
+    let limiteSuperior;
+    let rodadaAtiva = false; // Flag para verificar se uma rodada está ativa
+    let intervaloTempo;
+
+    // Função para atualizar os limites e mostrar a instrução
+    function atualizarLimites() {
+      limiteInferior = Math.floor(Math.random() * 10) + 1; // Novo limite inferior
+      limiteSuperior = limiteInferior + 10; // Novo limite superior
+      document.getElementById('resultado').innerText = `Adivinhe um número entre ${limiteInferior} e ${limiteSuperior}`;
+      rodadaAtiva = true; // Ativa a flag quando a nova rodada começa
+    }
+
+    // Função para atualizar a contagem regressiva
+    function atualizarContagem() {
+      const tempoRestanteElement = document.getElementById('tempo-restante');
+      tempoRestanteElement.innerText = `Próxima aposta em ${tempoRestante}s`;
+    }
+
+    // Chama as funções de atualização ao carregar a página
+    atualizarLimites();
+    atualizarContagem();
+
+    // Inicia a contagem regressiva ao carregar a página
+    const intervaloInicial = setInterval(() => {
+      tempoRestante--;
+      atualizarContagem();
+
+      if (tempoRestante <= 0) {
+        tempoRestante = 15; // Reinicia o tempo para a próxima aposta
+        atualizarLimites();
+        rodadaAtiva = true; // Ativa a flag para a próxima rodada
+      }
+    }, 1000);
+
+    function jogar() {
+      if (!rodadaAtiva) {
+        // A rodada não está ativa, não permita clicar no botão
+        return;
+      }
+
+      const apostaTexto = document.getElementById('aposta').value;
+      const aposta = parseInt(apostaTexto);
+
+      if (isNaN(aposta)) {
+        alert('Por favor, insira um número válido.');
+        return;
+      }
+
+      const numeroSorteado = Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1)) + limiteInferior;
+      const resultadoElement = document.getElementById('resultado');
+
+      if (aposta === numeroSorteado) {
+        resultadoElement.innerText = `Parabéns! Você acertou o número ${numeroSorteado} e ganhou!`;
+        resultadoElement.style.background ="green"
+      } else {
+        resultadoElement.innerText = `Desculpe, você errou. O número sorteado foi ${numeroSorteado}. Tente novamente.`;
+        resultadoElement.style.background ="red"
+      }
+
+      // Desabilita o botão por 10 segundos
+      document.getElementById('aposta').disabled = true;
+
+      // Limpa o intervalo anterior antes de iniciar um novo
+      clearInterval(intervaloTempo);
+
+      intervaloTempo = setInterval(() => {
+        tempoRestante--;
+        atualizarContagem();
+
+        if (tempoRestante <= 0) {
+          clearInterval(intervaloTempo);
+          document.getElementById('aposta').disabled = false;
+          tempoRestante = 15; // Reinicia o tempo para a próxima aposta
+          atualizarLimites();
+          rodadaAtiva = true; // Ativa a flag para a próxima rodada
+        }
+      }, 1000);
+
+      // Desativa a flag quando a rodada atual termina
+      rodadaAtiva = false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700;1,900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --azul-claro:#9CBCD9;
+    --azul-escuro:#223F59;
+    --verde-claro:#76BF2C;
+    --verde-escuro:#568C1F;
+    --preto-:#0000;
+    --branco-:#ffff;
+}
+
+body{
+    background-color: var(--azul-claro);
+/*background: linear-gradient(150deg,var(--azul-claro),var(--azul-claro),var(--verde-claro),var(--verde-escuro));*/     
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Header*/
+.barra-informacao {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: -80px; /* Inicia fora da visualização */
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+
+  .cabecalho {
+    background-color: var(--azul-escuro);
+  }
+
+
+  .cabecalho_cadrastro{
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+  }
+
+  .cabecalho_cadrastro-img{
+    margin-left: 2px;
+  }
+  .cadrastro_img{
+    width: 60%;
+  }
+
+
+  .cadrastro_configuracao{
+    color: var(--branco-);
+  }
+  .cadrastro{
+    background: none;
+    border: 1px solid var(--branco-);
+    text-shadow: 1px 1px 1px  black;
+  }
+
+  .cabecalho_cadrastro-link{
+    display: flex;
+    margin: 0px 10px;
+  }
+  .link{
+    color: var(--branco-);
+    font-size: 1.0em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .cadrastro_link{
+    background-color: var(--verde-escuro);
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+  }
+
+
+
+/*Menu idioma*/
+.close{
+  color: var(--branco-);
+  float: right;
+  margin: 10px 10px;  
+}
+.menu_text{
+  margin-left: 20px;
+  color: var(--branco-);
+  font-weight: bold;
+}
+.menu_text-h1{
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.menu_text-h2{
+  font-size: 1.0em;
+}
+.menu_configuracao{
+  display: none;
+  background-color: var(--azul-escuro);
+  height: 30vh;
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-140%);
+}
+.menu_linguagem{
+  display: block;
+  margin: 10px;
+}
+.menu-button{
+  border: none;
+  border-radius: 10px;
+  background: var(--verde-claro);
+  padding: 5px;
+  margin: 10px;
+}
+.menu-lista{
+  display: flex;
+  align-items: center;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: var(--branco-);
+}
+.menu-img{
+  width: 20px;
+  margin-right: 4px;
+}
+
+
+/*MAIN*/
+.principal_caixa{
+  display: block;
+  margin: auto;
+  width: 95vw;
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  background-color: #223F59;
+}
+.principal_caixa-h1{
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.principal_caixa-p{
+  font-size: 1em;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.cadrastro_bonus{
+  display: block;
+  background-color: red;
+  margin: auto;
+  padding: 4px;
+  width: 80%;
+  border-radius: 10px;
+  font-size: 1.5em;
+
+}
+.Bonus{
+  padding: 10px;
+}
+
+.caixa_central{
+  background-color: #223F59;
+  background: url('../Imagens/CASSINO.png');
+  background-position:  center  ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: block;
+  margin: auto;
+  width: 95vw;
+  margin-top: 5px;
+}
+.cassino_h1{
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin:20px 0 0 20px;
+}
+.cassino_p{
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  width: 70%;
+  font-weight: 700;
+  margin:5px 0 0 20px;
+  line-height: 20px;
+}
+.link_cassino{
+  display: block;
+  text-align: center;
+  background-color: red;
+  width: 37%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0px 0px 20px;
+}
+.cassino_link{
+  padding-bottom: 10px;
+}
+.esportes{
+  width: 50%;
+}
+.caixa_esporte{
+  background: none;
+  background: url("../Imagens/CASSINO_ESPORTE.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.principal_login{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.imagem_passo{
+  width: 40%;
+  border: 1px solid var(--branco-);
+  padding: 2px 5px;
+
+}
+
+.princiapl_passo-cadrastro{
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+.informacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infromacao_h1{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var( --azul-claro);
+}
+.informacao_cadrastro::after{
+
+  content: url(); 
+}
+.iformacao_Seta::before{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--branco-);
+  content: ">";
+}

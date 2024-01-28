@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barra Fixa ao Rolagem</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .barra-informacao {
+      background-color: #f2f2f2;
+      padding: 10px;
+      width: 100%;
+      position: fixed;
+      top: 1px; /* Inicia fora da visualização */
+      transition: top 0.3s ease-in-out;
+      z-index: 1000;
+    }
+    .conteudo {
+      height: 2000px; /* Apenas para simular uma página longa */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="barra-informacao">
+    Esta é a barra de informações. Ela será fixa quando você rolar para baixo.
+  </div>
+  <div class="conteudo">
+    <!-- Conteúdo da página -->
+    <!-- ... -->
+ 
+  </div>
+  
+  <script>
+    window.onscroll = function() {
+      const barraInformacao = document.querySelector('.barra-informacao');
+      if (window.pageYOffset > 50) { // Altere 50 para a posição desejada onde a barra deve ficar fixa
+        barraInformacao.style.top = '0';
+      } else {
+        barraInformacao.style.top = '1px'; // Esconde a barra acima da visualização
+      }
+    };
+  </script>
+</body>
+</html>
