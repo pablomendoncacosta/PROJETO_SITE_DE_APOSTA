@@ -27,20 +27,50 @@ body{
 
 /*Header*/
 .barra-informacao {
-    background-color: #f2f2f2;
-    padding: 10px;
+    background-color: var(--verde-escuro);
     width: 100%;
+    padding: 5px 3px;
     position: fixed;
-    top: -150px; /* Inicia fora da visualização */
+    top: 10px; /* Inicia fora da visualização */
     transition: top 0.3s ease-in-out;
     z-index: 1000;
   }
-
-
-  .cabecalho {
-    background-color: var(--azul-escuro);
+  .barra{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+  }
+  .barra-h1{
+    display: none;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .barra-h2{
+    color: var(--branco-);
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 90%;
+  }
+  .barra-button-caixa{
+    width: 70%;
+  }
+  .barra-button{
+    background-color:red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.0em;
+    color: var(--branco-);
+    border: 0;
+    border-radius:10px;
+    padding: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
   }
 
+  .cabecalho {
+      background-color: var(--azul-escuro);
+  }
 
   .cabecalho_cadrastro{
     display: flex;
@@ -227,7 +257,7 @@ body{
   background-repeat: no-repeat;
 }
 
-
+/*Caixa De longin principais*/
 .principal_login{
   display: flex;
   justify-content: space-between;
@@ -241,11 +271,12 @@ body{
 
 }
 
+/*Passo a Passo*/
 .princiapl_passo-cadrastro{
   display: block;
   text-align: center;
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 .informacao{
   display: flex;
@@ -257,13 +288,11 @@ body{
   font-weight: bold;
   color: var( --azul-claro);
 }
-.informacao_cadrastro::after{
 
-  content: url(); 
-}
 .iformacao_Seta::before{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0px 5px;
   color: var(--branco-);
   content: ">";
 }
+
+/*Metado de pagemento */
