@@ -31,7 +31,7 @@ body{
     padding: 10px;
     width: 100%;
     position: fixed;
-    top: -80px; /* Inicia fora da visualização */
+    top: -150px; /* Inicia fora da visualização */
     transition: top 0.3s ease-in-out;
     z-index: 1000;
   }
@@ -143,7 +143,6 @@ body{
 .principal_caixa{
   display: block;
   margin: auto;
-  width: 95vw;
   margin-top: 5px;
   text-align: center;
   color: white;
@@ -178,6 +177,7 @@ body{
   padding: 10px;
 }
 
+/*Caixa De Aposta*/
 .caixa_central{
   background-color: #223F59;
   background: url('../Imagens/CASSINO.png');
@@ -187,7 +187,6 @@ body{
   color: white;
   display: block;
   margin: auto;
-  width: 95vw;
   margin-top: 5px;
 }
 .cassino_h1{
