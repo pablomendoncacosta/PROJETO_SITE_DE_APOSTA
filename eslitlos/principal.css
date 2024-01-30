@@ -138,12 +138,12 @@ body{
 .menu_configuracao{
   display: none;
   background-color: var(--azul-escuro);
-  height: 30vh;
+  height: 35vh;
   width: 90vw;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-140%);
+  transform: translate(-50%,-80%);
 }
 .menu_linguagem{
   display: block;
