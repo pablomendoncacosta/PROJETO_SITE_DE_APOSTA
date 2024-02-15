@@ -1,3 +1,4 @@
+//BARRA DE ROLAGEM 
 window.onscroll = function() {
     const barraInformacao = document.querySelector('.barra-informacao');
     if (window.pageYOffset > 40) { // Altere 50 para a posição desejada onde a barra deve ficar fixa
@@ -6,6 +7,9 @@ window.onscroll = function() {
       barraInformacao.style.top = '-40px'; // Esconde a barra acima da visualização
     }
   };
+
+
+  //MENU DE LINGUAGEM INDEX.HTML
   var menu_configuracao = document.querySelector(".menu_configuracao")
   function configuracao_open(){
     if(menu_configuracao.style.display == "block"){

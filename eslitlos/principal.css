@@ -1,22 +1,4 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700;1,900&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-    --azul-claro:#9CBCD9;
-    --azul-escuro:#223F59;
-    --verde-claro:#76BF2C;
-    --verde-escuro:#568C1F;
-    --preto-:#0000;
-    --branco-:#ffff;
-}
+@import url(padrao_importe.css);
 
 body{
     background-color: var(--azul-claro);
@@ -57,7 +39,7 @@ body{
     width: 70%;
   }
   .barra-button{
-    background-color:red;
+    background-color:var(--vermelho-);
     text-decoration: none;
     font-weight: bold;
     font-size: 0.8em;
@@ -92,7 +74,7 @@ body{
   .cadrastro{
     background: none;
     border: 1px solid var(--branco-);
-    text-shadow: 1px 1px 1px  black;
+    text-shadow: 1px 1px 1px var(--preto-);
   }
 
   .cabecalho_cadrastro-link{
@@ -175,8 +157,8 @@ body{
   margin: auto;
   margin-top: 5px;
   text-align: center;
-  color: white;
-  background-color: #223F59;
+  color: var(--branco-);
+  background-color: var(--azul-escuro);
 }
 .principal_caixa-h1{
   font-size: 2em;
@@ -195,7 +177,7 @@ body{
 }
 .cadrastro_bonus{
   display: block;
-  background-color: red;
+  background-color: var(--vermelho-);
   margin: auto;
   padding: 4px;
   width: 80%;
@@ -209,12 +191,12 @@ body{
 
 /*Caixa De Aposta*/
 .caixa_central{
-  background-color: #223F59;
+  background-color: var(--azul-escuro);
   background: url('../Imagens/CASSINO.png');
   background-position:  center  ;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: var(--branco-);
   display: block;
   margin: auto;
   margin-top: 5px;
@@ -236,7 +218,7 @@ body{
 .link_cassino{
   display: block;
   text-align: center;
-  background-color: red;
+  background-color:var(--vermelho-);
   width: 37%;
   padding: 10px;
   border-radius: 10px;
@@ -304,3 +286,49 @@ body{
 }
 
 /*Metado de pagemento */
+
+
+
+/*footer*/
+
+.roda-pe{
+  margin: 10px 2px;
+}
+.roda-pe_caixa{
+  display: block;
+}
+.roda-pe_iconsSocial{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+}
+.roda-pe_logo{
+  width: 50%;
+}
+.roda-pe_Social{
+  width:10%;
+  margin: 0 10px;
+}
+
+.informacao_rodape{
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  margin: 0 10px 10px 10px;
+}
+.informacao_caixa{
+  display: flex;
+  justify-content: center;
+
+}
+.lista_texto{
+  font-size: 1.2em;
+  color: var(--branco-);
+  list-style: none;
+}
+.lista_texto:hover{
+  color: var(--azul-escuro);
+}
