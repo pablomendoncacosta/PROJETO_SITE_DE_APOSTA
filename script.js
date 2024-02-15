@@ -1,9 +1,9 @@
 window.onscroll = function() {
     const barraInformacao = document.querySelector('.barra-informacao');
-    if (window.pageYOffset > 50) { // Altere 50 para a posição desejada onde a barra deve ficar fixa
+    if (window.pageYOffset > 40) { // Altere 50 para a posição desejada onde a barra deve ficar fixa
       barraInformacao.style.top = '0';
     } else {
-      barraInformacao.style.top = '-160px'; // Esconde a barra acima da visualização
+      barraInformacao.style.top = '-40px'; // Esconde a barra acima da visualização
     }
   };
   var menu_configuracao = document.querySelector(".menu_configuracao")
