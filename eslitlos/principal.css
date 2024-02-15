@@ -314,15 +314,17 @@ body{
 
 .informacao_rodape{
   display: block;
+  justify-content: center;
   text-align: center;
   margin: auto;
-  width: 80%;
   margin: 0 10px 10px 10px;
 }
 .informacao_caixa{
   display: flex;
-  justify-content: center;
-
+  justify-content:  space-between;
+  margin: auto;
+  text-align: center;
+  
 }
 .lista_texto{
   font-size: 1.2em;
