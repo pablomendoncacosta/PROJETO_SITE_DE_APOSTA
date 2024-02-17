@@ -292,7 +292,7 @@ body{
 /*footer*/
 
 .roda-pe{
-  margin: 10px 2px;
+  margin: 10px 10px 0px 10px;
 }
 .roda-pe_caixa{
   display: block;
@@ -333,4 +333,126 @@ body{
 }
 .lista_texto:hover{
   color: var(--azul-escuro);
+}
+
+
+
+.roda-pe_pagementos{
+  display: grid;
+  margin: auto;
+  margin: 10px 10px 0px 10px;
+}
+.pagamento_texto{
+  font-size:0.8em;
+  margin-top: 10px;
+  color: var(--preto--);
+}
+.roda-pe_pagementos-icons{
+  display: flex;
+  margin: auto;
+  margin: 10px 0px;
+  justify-content: center;
+
+}
+
+.icons_pagamento{
+  width: 20%;
+  margin-right: 5px;
+}
+.roda-pe_direitos{
+  font-size: 0.7em;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+   .cabecalho_cadrastro-img{
+    display: flex;
+    justify-content: left;
+    float: left;
+
+  }
+  .cabecalho_configuração{
+    display: flex;
+    float: right;
+    margin-left: 300px;
+    justify-content: right;
+    justify-items: right;
+  }
+  .abecalho_cadrastro-link{
+
+  }
+  .cabecalho_cadrastro{
+    
+    display: flex;
+    justify-content: none;
+  }
+  .icons_pagamento{
+    width: 10%;
+  }
+  .lista_texto{
+    font-size: 1em;
+    color: var(--branco-);
+    list-style: none;
+  }
+  .informacao_rodape{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+.informacao_caixa{
+  display: flex;
+  margin: auto;
+  justify-self: center;
+}
+.roda-pe_logo{
+  width: 35%;
+}
+.roda-pe_Social{
+  width:08%;
+}
+.barra-informacao {
+  display: flex;
+  justify-content:space-between;
+  background-color: var(--verde-escuro);
+  width: 100%;
+  padding: 5px 3px;
+  position: fixed;
+  top: -60px; /* Inicia fora da visualização */
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+.barra{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+.barra-h1{
+  color: var(--branco-);
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+}
+.barra-h2{
+  color: var(--branco-);
+  font-size: 1em;
+  font-weight: bold;
+  width: 90%;
+}
+.barra-button-caixa{
+width: 40%;
+}
+.barra-button{
+  background-color:var(--vermelho-);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--branco-);
+  border: 0;
+  border-radius:10px;
+  padding: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+}
+
 }

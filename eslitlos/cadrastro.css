@@ -1,2 +1,94 @@
 @import url(../eslitlos/padrao_importe.css);
 
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.cabecalho_imagem{
+    width: 30%;
+}
+.cabecalho_texto{
+    font-size: 1.5em;
+    color: var(--azul-escuro);
+}
+.box{
+    position: absolute;
+    background-color: var(--azul-claro);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.inputBox{
+    position: relative;
+    display: grid;
+    color: white;
+    text-align: left;
+}
+.inputUser::placeholder{
+    padding-left: 10px;
+    color: var(--branco-);
+}
+.inputUser{
+    border: 0;
+    width: 100%;
+    background: none;
+    border:0;
+    outline: none;
+    border-bottom: 1px solid white;
+    margin: auto;   
+ 
+}
+.inputBox > label{
+    margin-left: 10px;
+
+}
+.inputSexo{
+    color: white;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 1.2em;
+
+}
+.inputDate{
+    text-align: left;
+    margin: 10px 10px;
+    color: white;
+}
+.inputDate input{
+    width: 32%;
+    border: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;  
+}
+.submit{
+    width: 50vw;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: 0; 
+    font-size:1.3em;
+    box-shadow: 1px 1px 5px black;
+}
+.submit:hover{
+    background-color: rgba(0, 0, 139, 0.199);
+}
+
+fieldset{
+    border: 3px solid darkslategray;
+ 
+}
+legend{
+    font-size: 1.5em;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}

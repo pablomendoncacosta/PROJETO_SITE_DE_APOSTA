@@ -8,22 +8,63 @@
     <link rel="shortcut icon" href="Imagens/LOGO.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img src="" alt="">
-        <h1>Faça seu login ou seu cadrastro</h1>
+    <header class="cabecalho">
+        <img class="cabecalho_imagem" src="Imagens/LOGO.png" alt="">
+     <h1 class="cabecalho_texto">Faça Seu Cadrastro</h1>
     </header>
     <section>
         <main>
-            <div>
-                <form action="" method="post">
-                    <input type="email" name="" id="" placeholder="CPF ou EMAIL" required >
-                    <input type="password" name="" id="" placeholder="SENHA " required>
-                    <input type="submit" value="entrar">
-                </form>
-            </div>
-            <div>
-                <a href="">esqueceu a senha</a>
-                <a href="">cadrastar</a>
+            <div class="box">
+                <form action="formulario.php" method="POST" autocomplete="on">  
+                    <fieldset><legend><strong>Fórmulario de clientes</strosng></legend>
+                    <div class="inputBox"> 
+                        <label for="nome">Nome completo</label>
+                        <input type="text" class="inputUser" name="nome" id="nome" autocomplete="name" required > 
+                    </div>
+                    <div class="inputBox">
+                         <label for="email">E-mail</label>
+                        <input type="email" class="inputUser" name="email" id="email" autocapitalize="email" required >
+                    
+                    </div>   
+                    <div class="inputBox">
+                         <label for="senha">Senha</label>
+                        <input type="password" class="inputUser" name="senha" id="senha" autocapitalize="passsword" required >
+                    
+                    </div>   
+                    <div class="inputBox">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" class="inputUser" name="telefone" id="telefone" autocomplete="tel" placeholder="(xx)xxxx-xxxx"  pattern="^\(\d{2}\)\d{4,5}-\d{4}$ required">
+            
+                    </div>
+                    <div class="inputSexo">
+                        <p>Sexo</p>
+                        <input type="radio"  name="genero" id="fem" value="Feminino" require>
+                        <label for="fem">Feminino</label><br>
+                        <input type="radio"  name="genero" id="masc" value="Mascuilino" require checked>
+                        <label for="masc">Masculino</label>
+                    </div>
+                    <div class="inputDate">
+                        <label for="data_nacimento"><strong>Data de nacimento:</strong></label>
+                        <input type="date" name="data_nacimento" id="data_nacimento">
+                    </div>
+                    <div class="inputBox">                
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="inputUser" name="cidade" id="cidade" > 
+        
+                    </div>
+                    <div class="inputBox"> 
+                        <label for="estado">Estado</label>
+                        <input type="text"class="inputUser" name="estado" id="estado"  > 
+                       
+                    </div>
+                    <div class="inputBox">               
+                        <label for="Endereço">Endereço</label>
+                        <input type="text" class="inputUser" name="Endereco" id="Endereco" > 
+         
+                    </div>
+                    <input type="submit" value="Cadrastrar" class="submit">
+                    </fieldset>
+                    </form>
             </div>
         </main>
     </section>

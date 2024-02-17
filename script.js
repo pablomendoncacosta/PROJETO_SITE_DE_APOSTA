@@ -4,7 +4,7 @@ window.onscroll = function() {
     if (window.pageYOffset > 40) { // Altere 50 para a posição desejada onde a barra deve ficar fixa
       barraInformacao.style.top = '0';
     } else {
-      barraInformacao.style.top = '-40px'; // Esconde a barra acima da visualização
+      barraInformacao.style.top = '-60px'; // Esconde a barra acima da visualização
     }
   };
 
@@ -26,3 +26,5 @@ window.onscroll = function() {
       
     }
   }
+
+
