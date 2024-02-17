@@ -18,8 +18,10 @@
       }
 
         main {
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            justify-content: center;
+            margin: auto;
+            text-align: center;
             padding: 32px;
         }
 
@@ -34,6 +36,7 @@
         }
 
         .investment-details {
+            margin: auto;
             width: 60%;
         }
         .investment-label{
@@ -63,4 +66,18 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        @media screen and (min-width:768px) {
+            main {
+                display: flex;
+                justify-content: left;
+                margin: auto;
+                text-align: none;
+                padding: 32px;
+            }
+            .investment-details {
+                margin: unset;
+            }
+        
         }
