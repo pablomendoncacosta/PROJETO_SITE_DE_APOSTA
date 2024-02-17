@@ -66,7 +66,9 @@ body{
   .cadrastro_img{
     width: 60%;
   }
-
+  .cabecalho_aposta{
+    display: none;
+  }
 
   .cadrastro_configuracao{
     color: var(--branco-);
@@ -157,6 +159,7 @@ body{
   margin: auto;
   margin-top: 5px;
   text-align: center;
+  border-radius: 10px;
   color: var(--branco-);
   background-color: var(--azul-escuro);
 }
@@ -197,6 +200,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--branco-);
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.705);
   display: block;
   margin: auto;
   margin-top: 5px;
@@ -364,6 +369,9 @@ body{
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
+  body{
+  background-color: rebeccapurple;
+  }
    .cabecalho_cadrastro-img{
     display: flex;
     justify-content: left;
@@ -432,6 +440,7 @@ body{
   color: var(--branco-);
   display: block;
   font-size: 1em;
+  margin-right: 5px;
   font-weight: bold;
 }
 .barra-h2{
@@ -454,5 +463,269 @@ width: 40%;
   padding: 3px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
 }
+.principal_caixa{ 
+  background: none;
+  background-image: url(../Imagens/fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.principal_caixa-h1{
+  text-shadow: 1px 1px 1px black;
+}
+.principal_caixa-p{
+  text-shadow: 1px 1px 1px black;
+}
+.cabecalho_aposta{
+  display: none;
+}
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+  .cabecalho_cadrastro-img{
+    display: flex;
+    justify-content: left;
+    float: left;
+  }
+  .cabecalho_configuração{
+    display: flex;
+    float: right;
+    margin-left: 300px;
+    justify-content: right;
+    justify-items: right;
+  }
+  .cabecalho_cadrastro-link{
+
+  }
+  .cadrastro_img{
+    width: 40%;
+  }
+  .cabecalho_aposta{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    float: left;
+  }
+  .cabecalho_aposta-link{
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .cabecalho_aposta-link:hover{
+    color: var(--azul-claro);
+  }
+  .cabecalho_cadrastro{
+    display: flex;
+    justify-content: none;
+  }
+  .icons_pagamento{
+    width: 10%;
+  }
+  .lista_texto{
+    font-size: 1em;
+    color: var(--branco-);
+    list-style: none;
+  }
+  .informacao_rodape{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+.informacao_caixa{
+  display: flex;
+  margin: auto;
+  justify-self: center;
+}
+.roda-pe_logo{
+  width: 35%;
+}
+.roda-pe_Social{
+  width:08%;
+}
+.barra-informacao {
+  display: flex;
+  justify-content:space-between;
+  background-color: var(--verde-escuro);
+  width: 100%;
+  padding: 5px 3px;
+  position: fixed;
+  top: -60px; /* Inicia fora da visualização */
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+.barra{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+.barra-h1{
+  color: var(--branco-);
+  display: block;
+  font-size: 1em;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.barra-h2{
+  color: var(--branco-);
+  font-size: 1em;
+  font-weight: bold;
+  width: 90%;
+}
+.barra-button-caixa{
+width: 40%;
+}
+.barra-button{
+  background-color:var(--vermelho-);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--branco-);
+  border: 0;
+  border-radius:10px;
+  padding: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+}
+.principal_caixa{ 
+  background: none;
+  background-image: url(../Imagens/fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.principal_caixa-h1{
+  text-shadow: 1px 1px 1px black;
+}
+.principal_caixa-p{
+  text-shadow: 1px 1px 1px black;
+}
+}
+
+@media screen and (min-width:1200px) {
+  .cabecalho_cadrastro-img{
+    display: flex;
+    justify-content: left;
+    float: left;
+  }
+  .cabecalho_configuração{
+    display: flex;
+    float: right;
+    margin-left: 450px;
+    justify-content: right;
+    justify-items: right;
+  }
+  .cabecalho_cadrastro-link{
+
+  }
+  .cadrastro_img{
+    width: 40%;
+  }
+  .cabecalho_aposta{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    float: left;
+  }
+  .cabecalho_aposta-link{
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  .cabecalho_aposta-link:hover{
+    color: var(--azul-claro);
+  }
+  .cabecalho_cadrastro{
+    display: flex;
+    justify-content: none;
+  }
+  .icons_pagamento{
+    width: 5%;
+  }
+  .lista_texto{
+    font-size: 1em;
+    color: var(--branco-);
+    list-style: none;
+  }
+  .informacao_rodape{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+.informacao_caixa{
+  display: flex;
+  margin: auto;
+  justify-self: center;
+}
+.roda-pe_logo{
+  width: 35%;
+}
+.roda-pe_Social{
+  width:08%;
+}
+.barra-informacao {
+  display: flex;
+  justify-content:space-between;
+  background-color: var(--verde-escuro);
+  width: 100%;
+  padding: 5px 3px;
+  position: fixed;
+  top: -60px; /* Inicia fora da visualização */
+  transition: top 0.3s ease-in-out;
+  z-index: 1000;
+}
+.barra{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+}
+.barra-h1{
+  color: var(--branco-);
+  display: block;
+  font-size: 1em;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.barra-h2{
+  color: var(--branco-);
+  font-size: 1em;
+  font-weight: bold;
+  width: 90%;
+}
+.barra-button-caixa{
+width: 40%;
+}
+.barra-button{
+  background-color:var(--vermelho-);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--branco-);
+  border: 0;
+  border-radius:10px;
+  padding: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+}
+.principal{
+  width: 80vw;
+  margin: auto;
+}
+.principal_caixa{ 
+  background: none;
+  background-image: url(../Imagens/fundo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.705);
+}
+.principal_caixa-h1{
+  text-shadow: 1px 1px 1px black;
+}
+.principal_caixa-p{
+  text-shadow: 1px 1px 1px black;
+}
 
 }
+
+

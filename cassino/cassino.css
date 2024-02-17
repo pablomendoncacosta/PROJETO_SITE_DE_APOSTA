@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 2em;
+}
+
+h1 {
+    color: #333;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+.balance {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.bet-options {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bet-option {
+    display: grid;
+    width: 30%;
+    background-color: #fff;
+    padding: 1em;
+
+    margin-bottom: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.bet-option img {
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    margin: auto;
+}
+.bet-option button{
+    width: 50%;
+    margin: auto;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
