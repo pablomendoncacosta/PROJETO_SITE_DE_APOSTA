@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Investimento</title>
+    <link rel="shortcut icon" href="../Imagens/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/investimento.css">
+</head>
+<body>
+ 
+    <main>
+        <div class="investment-info">
+            <div>
+                <img src="../cassino/imagem/perfil.png" alt="User">
+                <span>Nome do Investidor</span>
+            </div>
+            <div class="balance">Saldo Investido: R$ 10.000,00</div>
+        </div>
+        <h1 class="investment-details_texto">Plataforma de Investimento</h1>
+        <div class="investment-details">
+            <h2>Visão Geral do Investimento</h2>
+            <p>Bem-vindo à nossa plataforma de investimento! Aqui, explicaremos alguns conceitos importantes:</p>
+
+            <h2>Juros</h2>
+            <p>O juro é a remuneração paga por um investimento. Ele pode ser simples ou composto. No caso do juro composto, os rendimentos gerados são reinvestidos, gerando assim juros sobre juros.</p>
+
+            <h2>Aporte</h2>
+            <p>O aporte é o valor que você investe inicialmente ou periodicamente em sua conta de investimento. É uma contribuição para o crescimento do seu saldo ao longo do tempo.</p>
+
+            <h2>Retorno sobre Investimento (ROI)</h2>
+            <p>O ROI é uma medida de performance de um investimento. É calculado como a porcentagem de retorno em relação ao valor inicial investido. Quanto maior o ROI, melhor o desempenho do investimento.</p>
+        </div>
+        <div  class="btn_caixa"><button class="btn-expand" onclick="investir()">Investir Agora</button></div>
+
+    </main>
+
+    <div class="footer">
+        &copy; 2023 Plataforma de Investimento
+    </div>
+    <script>
+        function investir() {
+            window.location.href = 'pagina_investimento.html';
+        }
+    </script>
+</body>
+</html>

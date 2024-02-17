@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+main {
+    margin-bottom: 50px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+.investment-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    color: #FFF;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom:50px;
+}
+
+.investment-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+.investment-details_texto{
+    padding-left: 16px;
+}
+.investment-details {
+    width: 60%;
+    padding: 32px;
+}
+
+.investment-details h2 {
+    margin-bottom: 0.5em;
+}
+.btn_caixa{
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btn-expand {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0.5em 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-expand:hover{
+    background-color: #223F59;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

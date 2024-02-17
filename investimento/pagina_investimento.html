@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Investimento</title>
+    <link rel="stylesheet" href="./style/pagina_investimento.css">
+    <link rel="shortcut icon" href="../Imagens/LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Detalhes do Investimento</h1>
+    </header>
+    
+    <main>
+        <div class="investment-details">
+            <h2>Detalhes do Investimento</h2>
+            <p>Aqui estão alguns detalhes importantes sobre o investimento:</p>
+
+            <h2>Valor Mínimo</h2>
+            <p>O valor mínimo para investir é de R$ 100,00.</p>
+
+            <h2>Taxa de Juros</h2>
+            <p>A taxa de juros é de 5% ao ano.</p>
+
+            <h2>Período de Retirada</h2>
+            <p>Você pode retirar seus fundos a qualquer momento após o primeiro 3 meses do investimento.</p>
+        </div>
+        <div class="investment-form">
+            <h2>Investir Agora</h2>
+            <label class="investment-label" for="cotas">Quantidade de Cotas:</label>
+            <input type="number" class="investment-input" id="cotas" name="cotas" min="1" value="1" oninput="calcularInvestimento()">
+            <p id="invest-amount">Valor do Investimento: R$ 100,00</p>
+            <button class="btn-expand ">Investir Agora</button>
+        </div>
+        
+    </main>
+
+    <div class="footer">
+        &copy; 2023 Plataforma de Investimento
+    </div>
+
+    <script>
+        function calcularInvestimento() {
+            const cotas = parseInt(document.getElementById('cotas').value, 10);
+            const valorCota = 100; // Substitua pelo valor real de cada cota
+    
+            const valorInvestimento = cotas * valorCota;
+    
+            document.getElementById('invest-amount').textContent = `Valor do Investimento: R$ ${valorInvestimento.toFixed(2)}`;
+        }
+    </script>
+
+</body>
+</html>
