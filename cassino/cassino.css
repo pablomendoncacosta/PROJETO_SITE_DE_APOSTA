@@ -1,9 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+@import url(../eslitlos/padrao_importe.css);
 
 header {
     background-color: #333;
@@ -12,24 +7,24 @@ header {
     padding: 1em;
 }
 
-main {
-    padding: 2em;
-}
+
 
 h1 {
     color: #333;
 }
 
 .user-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
+   width: 100vw;
     background-color: #fff;
     border-radius: 5px;
     margin-bottom: 1em;
 }
-
+.infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 1em;
+}
 .user-info img {
     border-radius: 50%;
     width: 50px;
@@ -46,7 +41,8 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    
+    margin-bottom: 50px;
 }
 
 .bet-option {
@@ -61,6 +57,9 @@ h1 {
 }
 .bet-option h2{
     font-size: 1em;
+}
+.bet-option p{
+    font-size: 0.8em;
 }
 .bet-option img {
     width: 50%;
@@ -81,7 +80,7 @@ h1 {
     bottom: 0;
     width: 100%;
 }
-@media screen and (min-width:768px) and (max-width:1200px){
+@media screen and (min-width:768px) {
     .bet-option {
         display: grid;
         width: 40%;
@@ -94,6 +93,9 @@ h1 {
     }
     .bet-option h2{
         font-size: 1.2em;
+    }
+    .bet-option p{
+        font-size: 1em;
     }
 }
 
